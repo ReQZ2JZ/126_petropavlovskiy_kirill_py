@@ -33,9 +33,7 @@ def calculate_age(birthday):
         age -= 1
     return age
 
-# вычисление среднего возраста
 total_age = sum(calculate_age(person['birthday']) for person in data)
 average_age = total_age / len(data)
 
-# вывод результата
 print("Average age:", average_age)
